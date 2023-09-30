@@ -1,12 +1,23 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
+import "./Navbar.css"
 
 
 const Navbar = () => {
-  return <nav>
-    <Link to="/">Domů</Link><br />
-    <Link to="/movies">Filmy</Link><br />
-    <Link to="/serials">Seriály</Link>
-  </nav>
+  return <header>
+    <nav>
+      <NavLink to="/" className={ ({isActive}) =>
+        isActive ? "activeLink" : "nonactiveLink"
+      } >Domů</NavLink><br />
+     
+      <NavLink to="/movies" className={({ isActive }) =>
+        isActive ? "activeLink" : "nonactiveLink"
+      }>Filmy</NavLink><br />
+     
+      <NavLink to="/serials" className={({ isActive }) =>
+        isActive ? "activeLink" : "nonactiveLink"
+      } >Seriály</NavLink>
+    </nav>
+  </header>
 }
 
 
