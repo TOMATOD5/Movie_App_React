@@ -1,6 +1,8 @@
+import "./Footer.css"
+
 const Footer = () => {
     return <footer>
-      <p>Patička</p>
+      <p>&copy; Richard Jonáš, 2023</p>
     </footer>
   }
   
