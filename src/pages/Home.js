@@ -1,13 +1,11 @@
-import { Link } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 
 
 const Home = () => {
   return <section>
-    <ul>
-        <li>Domovská stránka</li>
-        <li><Link to="/movies">Filmy</Link></li>
-        <li><Link to="/serials">Seriály</Link></li>
-    </ul>
+    <h1>Úvodní strana</h1>
   </section>
 }
 
